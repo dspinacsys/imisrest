@@ -1,0 +1,40 @@
+<html ng-app="personApp">
+
+<head>
+    <title>Person Adder</title>
+
+`
+
+</head>
+
+<body>
+
+    <div class="container" ng-controller="PersonController">
+        <h1>{{mainTitle}}</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input ng-model="firstName" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Lat Name:</label>
+                <input ng-model="lastName" class="form-control" id="lastName">
+            </div>
+            
+            <button ng-click="addPerson()" class="btn btn-primary">Add Person</button>
+        </form>
+            {{ successMessage }}
+            {{ errorMessage }}
+
+        <h2>{{ listingHeading }}</h2>
+        <div ng-repeat="person in personListing.Items">
+            <person-Info></person-Info>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="personApp.js"></script>
+
+</body>
+
+</html>

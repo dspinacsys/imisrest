@@ -1,0 +1,13 @@
+<div class="panel">
+    <div class="panel-heading">
+        <h4>{{person.PersonName.FullName}}  ({{person.PersonName.InformalName}})</h4>
+    </div>
+    <div class="panel-body">
+         <div ng-repeat="item in person.AdditionalAttributes">
+             <strong>{{item.Name}}</strong> - {{item.Value}}
+         </div>   
+    </div>
+    <div class="panel-footer">
+        <em>Created On: {{person.UpdateInformation.CreatedOn | date}}</em>
+    </div>
+</div>

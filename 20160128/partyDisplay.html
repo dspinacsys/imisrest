@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3>{{ person.PersonName.FullName }}</h3>
+    </div>
+    <div class="panel-body">
+        <h4>Addresses<h4>
+            <div ng-repeat="address in person.Addresses">
+               <span ng-repeat="line in address.Address.AddressLines">
+                   {{ line }}<BR>
+               </span>
+               {{address.Address.CityName}}, {{ address.Address.CountrySubEntityCode }}  {{ address.Address.PostalCode }}<BR><BR>
+            </div>
+    </div>
+    <div class="panel-footer">
+        iMIS ID: {{ person.Id }}
+    </div>
+    
+
+</div>

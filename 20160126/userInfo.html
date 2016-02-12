@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        {{ user.name }}
+    </div>
+    <div class="panel-body">
+        Address: {{user.address.street}}, {{ user.address.city }} - {{ user.address.zipcode }}<BR>
+        <input type="button" class="btn btn-primary" ng-click="userClick(user.name)" value="Information Alert">
+    </div>
+    <div class="panel-footer">
+        {{ user.company.catchPhrase }}
+    </div>
+</div>

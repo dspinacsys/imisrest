@@ -1,0 +1,39 @@
+<html ng-app="personApp">
+    <head><title>Working with REST API</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    
+    </head>
+    
+    <body>
+        
+        <div class="container" ng-controller="PartyController">
+  <form>
+            <fieldset  class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" ng-model='firstName' placeholder="First Name">
+            </fieldset >
+            
+            <fieldset  class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" ng-model="lastName" placeholder="Last Name">
+            </fieldset >
+            <input type="button"" value="Add"  ng-click="addPerson()" class="btn btn-primary">
+</form>
+                <div class="alert alert-success" ng-show="newPersonMessage != ''">
+                    {{ newPersonMessage }}
+                </div>
+                
+                <h3>{{ title }}</h3>
+                
+                <div ng-repeat="person in people.Items">
+                    <person-Info></person-Info>
+                </div>
+            
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>    
+</html>
