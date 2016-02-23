@@ -1,0 +1,15 @@
+<div class="panel">
+    <div ng-repeat="property in item.Properties">
+
+
+
+        <div ng-if="property.Name != 'ResultRow' && property.Name != 'DOB'">
+                <strong>{{property.Name}}</strong>: {{property.Value}}
+        </div>
+        <div ng-if="property.Name != 'ResultRow' && property.Name == 'DOB'">
+                <strong>{{property.Name}}</strong>: {{property.Value | date:'MM/dd/yyyy' }}
+        </div>
+
+    </div>
+</div>
+</div>

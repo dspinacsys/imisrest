@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Test Query</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+</head>
+
+<body >
+    <script type="text/javascript">
+    
+        $(document).ready(function(){
+            $.get("http://localhost:53912/UserInfo.aspx", function(data){
+                $("#mydata").html(data);
+            }).fail(function(){
+            
+                $("#mydata").html('error');
+            });
+        });
+    
+    </script>
+    
+    
+    <div id="mydata"></div>
+</body>
+
+</html>
