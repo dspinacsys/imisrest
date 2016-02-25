@@ -1,7 +1,7 @@
 var url = "http://localhost/imis26/api/party/";
 var id = "101";
 
-var token = "jvFpfM_9oVzWOhIQKdWJ-idxAoRBOsfhTmXH9nrn_BMhKqjMDoX89Naq_JbhIrryvIpWKpEiIyRsIk4PKEq4KQWh93hENXMxhewTIdR9_ck1";
+var token = "kb5VrcB-QirR7U80UEdO-6htf6wqA3RGir5LPq-haj5pCLoevt1Y8PI7Myi8DOMjIXvSzyzTLycwLAY8Pi0nkVkkQDlMm-Hm6eQHwMHswfg1";
 
 
 var app = angular.module("app", []);

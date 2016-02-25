@@ -1,5 +1,5 @@
 var baseUrl = "http://localhost/imis26/api/event";
-var token = "sLmXpFEcDwOodkWTMU3p57L2fQWBLDT7m862h_JNM8Jj9HE0ofcttu8ZQo0WRgUKcLZg12fsgEsySBQOP7UkzQVxIbYaQf0SUDutbkJlHUw1";
+var token = "kb5VrcB-QirR7U80UEdO-6htf6wqA3RGir5LPq-haj5pCLoevt1Y8PI7Myi8DOMjIXvSzyzTLycwLAY8Pi0nkVkkQDlMm-Hm6eQHwMHswfg1";
 
 
 var eventApp = angular.module("eventApp", []);

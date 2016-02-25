@@ -2,7 +2,7 @@ var personApp = angular.module('personApp', []);
 var url = "http://localhost/imis26/api/party?lastname=startsWith:sp";
 var postUrl = "http://localhost/imis26/api/party/";
 
-var token = 'Tjpx1SX5XZhK-AEcxbIPTelo1RBanMto_tcryu9DXdkMSupfqqLZGD65_0pkSoSRDVq-XBxP9f62-dbvyXmDOWcAD6CqFyPtfj6n9gVvB0Y1';
+var token = 'kb5VrcB-QirR7U80UEdO-6htf6wqA3RGir5LPq-haj5pCLoevt1Y8PI7Myi8DOMjIXvSzyzTLycwLAY8Pi0nkVkkQDlMm-Hm6eQHwMHswfg1';
 
 var config = {
     headers: {

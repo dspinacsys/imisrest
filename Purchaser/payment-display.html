@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        
+        <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>&nbsp;
+        <strong>Payment Information</strong>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="creditCardNumber">Credit Card Number:</label>
+            <input class="form-control" id="creditCardNumber" ng-model="ccNum">
+            <label for="creditCardExpiration">Credit Card Expiration:</label>
+            <input class="form-control" id="creditCardExpiration" ng-model="ccExp">
+            <label for="nameOnCard">Name on Card:</label>
+            <input class="form-control" id="nameOnCard" ng-model="ccName">
+            <button ng-click="processPayment()" id="btnSubmit" class="btn btn-primary">Pay Now</button>
+            
+            <div class="alert alert-info" ng-show="paymentResponse != ''">{{paymentResponse}}</div>
+        </div>
+    </div>
+</div>

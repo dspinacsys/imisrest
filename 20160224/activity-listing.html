@@ -1,0 +1,13 @@
+<div ng-repeat="activity in Activities.Items" style="padding-bottom: 10px">
+    <div ng-repeat="property in activity.Properties" >
+        <span ng-show="property.Name == 'ACTIVITY_TYPE'">
+            <strong>Activity Type: </strong>{{property.Value}}
+        </span>
+        <span ng-show="property.Name == 'DESCRIPTION'">
+            <strong>Description: </strong>{{property.Value}}
+        </span>
+        <span ng-show="property.Name == 'THRU_DATE' && property.Value != ''">
+            <strong>Thru Date: </strong>{{property.Value | date: 'MM/dd/yyyy'}}
+        </span>
+    </div>
+</div>

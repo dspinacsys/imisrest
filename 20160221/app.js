@@ -1,7 +1,7 @@
 var app = angular.module('app', []);
 
 var url = "http://localhost/imis26/api/IQA?QueryName=";
-var token = "esaYlDoL50obBYz6aodQ_8cW9MxAXgxiSkWGPfVtpo7ZxN2xqmpuZ5f1DuftMU6gswxeLHRE81pHpEBPmD5RtRlD_8QSaNrZcxFW0HuD2ec1";
+var token = "SffC8VeVTwa9U86noWrEOqJ1U1Z-t_gJTiLjjfBcU6xXelEoI_ZfMSViDr4MGRIVLbQrRuXL_3z4J3LeFjvtFD21O9r0bL_OfiGUEUL8vSg1";
 var queryPath = "$/Test/TheYoungOnes";
 
 
